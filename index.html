@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Cache-control" content="public" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="description" content="A directory of minimal and useful single-purpose apps." />
+	<meta name="keywords" content="single purpose apps, minimal apps" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-mobile-web-app-title" content="Unapp" />
+	<meta name="application-name" content="Unapp" />
+	<meta name="theme-color" content="#FFFFFF" />
+	<meta property="og:url" content="https://unapp.li" />
+	<meta property="og:image" content="https://unapp.li/apple-touch-icon.png" />
+	<meta property="og:title" content="Unapp" />
+	<meta property="og:description" content="A directory of minimal and useful single-purpose apps." />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19124340-26"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+		gtag('config', 'UA-19124340-26');
+	</script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon.png">
+	<link rel="manifest" href="/manifest.json" />
+	<title>Unapp</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+	<link href="/style.css" rel="stylesheet" />
+	<script defer src="/vue.min.js"></script>
+	<script defer src="/script.js"></script>
+</head>
+
+<body>
+	<section id="unapp" class="wrapper">
+		<header>
+			<div id="intro">
+				<span id="logo">Unapp</span> <i>&ndash; a directory of minimal and useful single-purpose apps.</i>
+			</div>
+		</header>
+		<section id="search">
+			<input type="search" name="search" placeholder="Search.." v-model="query" />
+		</section>
+		<main v-bind:style="'display:block;'">
+			<div v-if="posts.length > 0" v-for="(post, index) in posts">
+				<a v-bind:href="post.url" class="post" target="_blank">
+					<img class="thumbnail" v-bind:src="post.thumbnail" v-bind:alt="post.name">
+					<div class="details">
+						<div class="title">{{post.name}}</div>
+						<div class="description">{{post.description}}</div>
+						<div class="meta">
+							<div class="tags">
+								<span v-for="tag in post.tags" v-on:click="tagClick" v-bind:data-tag="tag">{{tag}}</span>
+							</div>
+							<div class="views"></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<section v-if="isloading">
+				<div class="ph-item">
+					<div class="ph-col-2">
+						<div class="ph-avatar"></div>
+					</div>
+					<div>
+						<div class="ph-row">
+							<div class="ph-col-2 big"></div>
+							<div class="ph-col-8 empty"></div>
+							<div class="ph-col-12 medium"></div>
+							<div class="ph-col-2"></div>
+							<div class="ph-col-8 empty"></div>
+						</div>
+					</div>
+				</div>
+				<div class="ph-item">
+					<div class="ph-col-2">
+						<div class="ph-avatar"></div>
+					</div>
+					<div>
+						<div class="ph-row">
+							<div class="ph-col-2 big"></div>
+							<div class="ph-col-8 empty"></div>
+							<div class="ph-col-12 medium"></div>
+							<div class="ph-col-2"></div>
+							<div class="ph-col-8 empty"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<button id="loadmore" v-if="showing < allPosts.length" v-on:click="showing += 10">Load More</button>
+		</main>
+	</section>
+	<footer>
+		Made by <a href="https://twitter.com/vsnthv" target="_blank">Vasanth</a>
+		&middot;
+		<a href="https://github.com/unappli/unappli.github.io" target="_blank">View it on Github</a>
+		&middot;
+		<a href="https://forms.gle/s1JATr7oW1pNg8zu5" target="_blank">Submit an App</a>
+	</footer>
+</body>
+
+</html>
