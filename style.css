@@ -123,7 +123,7 @@ input[type=search] {
 #loadmore {
   display: block;
   background: #ffffff;
-  color: #555;
+  color: #000;
   border: 1px solid #cdcdcd;
   font-size: 1rem;
   padding: 0.8rem 1rem;
