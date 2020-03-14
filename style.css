@@ -1,150 +1,141 @@
 :root {
-  --background-color: #E6ECF0;
-  --text: #333333;
-  --text-light: #727377;
-  --yellow: #FACF5A;
-  --red: #CB2331;
-  --green: #3A9679;
-  --blue: #2980B9;
+	--background-color: #e6ecf0;
+	--text: #333333;
+	--text-light: #727377;
+	--yellow: #facf5a;
+	--red: #cb2331;
+	--green: #3a9679;
+	--blue: #2980b9;
 }
 * {
-  outline: 0;
-  -webkit-overflow-scrolling: touch;
+	outline: 0;
+	-webkit-overflow-scrolling: touch;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  background: var(--background-color);
-  color: var(--text);
-  margin: 0;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+		Cantarell, "Helvetica Neue", sans-serif;
+	background: var(--background-color);
+	color: var(--text);
+	margin: 0;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
 }
 a {
-  color: #000;
+	color: #000;
 }
 main {
-  display: none;
+	display: none;
 }
 footer {
-  text-align: center;
-  font-size: 0.8rem;
-  margin: 1rem auto;
+	text-align: center;
+	font-size: 0.8rem;
+	margin: 1rem auto;
 }
-input[type=search] {
-  padding: 1rem;
-  display: block;
-  border-radius: 2rem;
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  font-size: 1rem;
+input[type="search"] {
+	padding: 1rem;
+	display: block;
+	border-radius: 2rem;
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	font-size: 1rem;
 }
 /* Generic class definition starts */
 .wrapper {
-  width: 100%;
-  max-width: 640px;
-  margin: auto;
-  box-sizing: border-box;
-  padding: 10px;
+	width: 100%;
+	max-width: 640px;
+	margin: auto;
+	box-sizing: border-box;
+	padding: 10px;
 }
 .ph-item {
-  margin: 2rem auto;
-  border-radius: 0.8rem !important;
+	margin: 2rem auto;
+	border-radius: 0.8rem !important;
 }
 .ph-avatar {
-  border-radius: 1rem !important;
+	border-radius: 1rem !important;
 }
 .ph-row .medium {
-  height: 15px;
+	height: 15px;
 }
 .post {
-  display: flex;
-  background: #ffffff;
-  border-radius: 0.8rem;
-  margin: 2rem auto;
-  padding: 1rem;
-  cursor: pointer;
-  transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
-  text-decoration: none;
+	display: flex;
+	background: #ffffff;
+	border-radius: 0.8rem;
+	margin: 2rem auto;
+	padding: 1rem;
+	cursor: pointer;
+	transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+	text-decoration: none;
 }
 .post:hover {
-  text-decoration: none;
-  transform: translateY(-4px);
-  box-shadow: 0px 4px 8px 5px #dfdfdf;
+	text-decoration: none;
+	transform: translateY(-4px);
+	box-shadow: 0px 4px 8px 5px #dfdfdf;
 }
 .post img.thumbnail {
-  width: 5rem;
-  height: 5rem;
-  margin-right: 1rem;
-  border-radius: 1rem;
+	width: 5rem;
+	height: 5rem;
+	margin-right: 1rem;
+	border-radius: 1rem;
 }
 .post div.details {
-  flex: 1;
+	flex: 1;
 }
 .post div.details .title {
-  font-size: 1.2rem;
-  font-weight: 500;
+	font-size: 1.2rem;
+	font-weight: 500;
 }
 .post div.details .description {
-  color: #555;
+	color: #555;
 }
 .post div.details .meta {
-  display: flex;
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
+	display: flex;
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
 }
 .post div.details .meta .tags {
-  flex: 1;
+	flex: 1;
 }
 .post div.details .meta .tags span {
-  display: inline-block;
-  border-radius: 0.3rem;
-  background: #dcdcdc;
-  padding: 0rem 0.3rem;
-  margin-right: 0.4rem;
+	display: inline-block;
+	border-radius: 0.3rem;
+	background: #dcdcdc;
+	padding: 0rem 0.3rem;
+	margin-right: 0.4rem;
 }
 .post div.details .meta .tags span:before {
-  content: '#';
+	content: "#";
 }
 .post div.details .meta .tags span:hover {
-  background: #cdcdcd;
+	background: #cdcdcd;
 }
 
 /*Element specific CSS*/
-#banner {
-  background: #000;
-  color: #dfdfdf;
-  padding: 0.7rem;
-  font-weight: 500;
-  text-align: center;
-}
-#banner a {
-  color: #dfdfdf;
-}
 #intro {
-  font-size: 2rem;
-  margin: 2.5rem 0rem 2.5rem;
+	font-size: 2rem;
+	margin: 2.5rem 0rem 2.5rem;
 }
 #logo {
-  font-family: 'Baloo', cursive;
-  font-size: 2.5rem;
+	font-family: "Baloo", cursive;
+	font-size: 2.5rem;
 }
 #loadmore {
-  display: block;
-  background: #ffffff;
-  color: #000;
-  border: 1px solid #cdcdcd;
-  font-size: 1rem;
-  padding: 0.8rem 1rem;
-  width: 100%;
-  box-sizing: border-box;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  opacity: 0.8;
+	display: block;
+	background: #ffffff;
+	color: #000;
+	border: 1px solid #cdcdcd;
+	font-size: 1rem;
+	padding: 0.8rem 1rem;
+	width: 100%;
+	box-sizing: border-box;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	opacity: 0.8;
 }
 #loadmore:hover {
-  background: #efefef;
+	background: #efefef;
 }
 
 /**
@@ -153,112 +144,118 @@ input[type=search] {
  * License: MIT
  **/
 .ph-item {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px 15px 15px;
-  overflow: hidden;
-  margin-bottom: 30px;
-  background-color: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 2px
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px 15px 15px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 2px;
 }
 .ph-item,
 .ph-item *,
 .ph-item :after,
 .ph-item :before {
-  box-sizing: border-box
+	box-sizing: border-box;
 }
 .ph-item:before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 50%;
-  z-index: 1;
-  width: 500%;
-  margin-left: -250%;
-  -webkit-animation: phAnimation .8s linear infinite;
-  animation: phAnimation .8s linear infinite;
-  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 46%, hsla(0, 0%, 100%, .35) 50%, hsla(0, 0%, 100%, 0) 54%) 50% 50%
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 50%;
+	z-index: 1;
+	width: 500%;
+	margin-left: -250%;
+	-webkit-animation: phAnimation 0.8s linear infinite;
+	animation: phAnimation 0.8s linear infinite;
+	background: linear-gradient(
+			90deg,
+			hsla(0, 0%, 100%, 0) 46%,
+			hsla(0, 0%, 100%, 0.35) 50%,
+			hsla(0, 0%, 100%, 0) 54%
+		)
+		50% 50%;
 }
-.ph-item>* {
-  flex: 1 1 auto;
-  display: flex;
-  flex-flow: column;
-  padding-right: 15px;
-  padding-left: 15px
+.ph-item > * {
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 .ph-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 7.5px
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 7.5px;
 }
 .ph-row div {
-  height: 10px;
-  margin-bottom: 7.5px;
-  background-color: #ced4da
+	height: 10px;
+	margin-bottom: 7.5px;
+	background-color: #ced4da;
 }
 .ph-row .big,
 .ph-row.big div {
-  height: 20px;
-  margin-bottom: 15px
+	height: 20px;
+	margin-bottom: 15px;
 }
 .ph-row .empty {
-  background-color: hsla(0, 0%, 100%, 0)
+	background-color: hsla(0, 0%, 100%, 0);
 }
 .ph-col-2 {
-  flex: 0 0 16.66667%
+	flex: 0 0 16.66667%;
 }
 .ph-col-4 {
-  flex: 0 0 33.33333%
+	flex: 0 0 33.33333%;
 }
 .ph-col-6 {
-  flex: 0 0 50%
+	flex: 0 0 50%;
 }
 .ph-col-8 {
-  flex: 0 0 66.66667%
+	flex: 0 0 66.66667%;
 }
 .ph-col-10 {
-  flex: 0 0 83.33333%
+	flex: 0 0 83.33333%;
 }
 .ph-col-12 {
-  flex: 0 0 100%
+	flex: 0 0 100%;
 }
 .ph-avatar {
-  position: relative;
-  width: 100%;
-  min-width: 60px;
-  background-color: #ced4da;
-  margin-bottom: 15px;
-  border-radius: 50%;
-  overflow: hidden
+	position: relative;
+	width: 100%;
+	min-width: 60px;
+	background-color: #ced4da;
+	margin-bottom: 15px;
+	border-radius: 50%;
+	overflow: hidden;
 }
 .ph-avatar:before {
-  content: " ";
-  display: block;
-  padding-top: 100%
+	content: " ";
+	display: block;
+	padding-top: 100%;
 }
 .ph-picture {
-  width: 100%;
-  height: 120px;
-  background-color: #ced4da;
-  margin-bottom: 15px
+	width: 100%;
+	height: 120px;
+	background-color: #ced4da;
+	margin-bottom: 15px;
 }
 @-webkit-keyframes phAnimation {
-  0% {
-    transform: translate3d(-30%, 0, 0)
-  }
-  to {
-    transform: translate3d(30%, 0, 0)
-  }
+	0% {
+		transform: translate3d(-30%, 0, 0);
+	}
+	to {
+		transform: translate3d(30%, 0, 0);
+	}
 }
 @keyframes phAnimation {
-  0% {
-    transform: translate3d(-30%, 0, 0)
-  }
-  to {
-    transform: translate3d(30%, 0, 0)
-  }
+	0% {
+		transform: translate3d(-30%, 0, 0);
+	}
+	to {
+		transform: translate3d(30%, 0, 0);
+	}
 }
