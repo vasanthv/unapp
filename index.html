@@ -18,10 +18,7 @@
 		<meta property="og:url" content="https://unapp.li" />
 		<meta property="og:image" content="https://unapp.li/apple-touch-icon.png" />
 		<meta property="og:title" content="Unapp" />
-		<meta
-			property="og:description"
-			content="A directory of minimal and useful single-purpose apps."
-		/>
+		<meta property="og:description" content="A directory of minimal and useful single-purpose apps." />
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19124340-30"></script>
 		<script>
@@ -29,9 +26,9 @@
 			function gtag() {
 				dataLayer.push(arguments);
 			}
-			gtag('js', new Date());
+			gtag("js", new Date());
 
-			gtag('config', 'UA-19124340-30');
+			gtag("config", "UA-19124340-30");
 		</script>
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
@@ -49,6 +46,18 @@
 					<span id="logo">Unapp</span>
 					<i>&ndash; a directory of minimal and useful single-purpose apps.</i>
 				</div>
+				<div style="margin-bottom:1.5rem; text-align: center;">
+					<a
+						href="https://www.producthunt.com/posts/unapp?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-unapp"
+						target="_blank"
+						><img
+							src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=158024&theme=light&period=daily"
+							alt="Unapp - A directory of minimal and useful single-purpose apps. | Product Hunt"
+							style="width: 250px; height: 54px;"
+							width="250"
+							height="54"
+					/></a>
+				</div>
 			</header>
 			<section id="search">
 				<input type="search" name="search" placeholder="Search.." v-model="query" />
@@ -62,9 +71,7 @@
 							<div class="description">{{post.description}}</div>
 							<div class="meta">
 								<div class="tags">
-									<span v-for="tag in post.tags" v-on:click="tagClick" v-bind:data-tag="tag"
-										>{{tag}}</span
-									>
+									<span v-for="tag in post.tags" v-on:click="tagClick" v-bind:data-tag="tag">{{tag}}</span>
 								</div>
 								<div class="views"></div>
 							</div>
